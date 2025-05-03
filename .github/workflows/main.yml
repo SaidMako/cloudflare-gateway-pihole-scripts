@@ -41,7 +41,24 @@ jobs:
       - name: Download blocklists
         run: npm run download:blocklist
         env:
-          BLOCKLIST_URLS: ${{ vars.BLOCKLIST_URLS }}
+          BLOCKLIST_URLS: |
+            https://o0.pages.dev/Pro/domains.wildcards
+            https://big.oisd.nl/domainswild2
+            https://github.com/mullvad/dns-blocklists/raw/refs/heads/main/lists/relay/privacy/mullvad-tracker-blocklist
+            https://v.firebog.net/hosts/Easyprivacy.txt
+            https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/domains/native.amazon.txt
+            https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/domains/native.apple.txt
+            https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/domains/native.huawei.txt
+            https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/domains/native.winoffice.txt
+            https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/domains/native.tiktok.extended.txt
+            https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/domains/native.lgwebos.txt
+            https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/domains/native.vivo.txt
+            https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/domains/native.oppo-realme.txt
+            https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/domains/native.xiaomi.txt
+            https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt
+            https://v.firebog.net/hosts/AdguardDNS.txt
+            https://urlhaus.abuse.ch/downloads/hostfile
+            https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/rpz/tif.mini.txt
 
       - name: Upsert rules and lists
         run: npm run cloudflare-create
