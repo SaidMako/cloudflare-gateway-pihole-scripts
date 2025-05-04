@@ -43,7 +43,7 @@ jobs:
         env:
           BLOCKLIST_URLS: |
             https://o0.pages.dev/Pro/domains.wildcards
-            https://big.oisd.nl/domainswild2
+            https://small.oisd.nl
             https://github.com/mullvad/dns-blocklists/raw/refs/heads/main/lists/relay/privacy/mullvad-tracker-blocklist
             https://v.firebog.net/hosts/Easyprivacy.txt
             https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/domains/native.amazon.txt
