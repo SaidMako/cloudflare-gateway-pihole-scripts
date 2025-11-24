@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
         with:
-          repository: "bsyk/cloudflare-gateway-pihole-scripts"
+          repository: "mrrfv/cloudflare-gateway-pihole-scripts"
           ref: "update-lists"
 
       - name: Install Node.js
